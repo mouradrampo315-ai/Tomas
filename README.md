@@ -1,5 +1,5 @@
 # 🛡️ My First Logic Project (C#)
-### Developed by: Badr (Age: 16)
+### Developed by: Tomas mourad (Age: 16)
 
 This is my first project focused on learning **C#** logic. I built this program to intelligently validate user data and prevent input errors.
 
