@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("hello word");
+            Console.WriteLine("iam tommy mourad");
+            Console.WriteLine("please Enter your name :");
+            string userName = Console.ReadLine();
+            if (userName.Any(char.IsDigit))
+            {
+                Console.WriteLine("Error please check your name !");
+            }
+            else {
+                Console.WriteLine("hello " + userName + " nice to meet you");           
+            }
+
+            Console.WriteLine("|___________________|");
+
+
+            Console.WriteLine("please Enter your age :" + userName);
+            string age = Console.ReadLine();
+            double age_Check;
+             if (double.TryParse(age,out age_Check))
+            {
+                if (age_Check%1!=0)
+                 {
+                    Console.WriteLine("Error please Check your age " + userName);
+                 }
+                else
+                 {
+                    Console.WriteLine("okey thank " + userName);
+                 }
+
+            }
+            else
+            {
+                Console.WriteLine("that.s great " + userName);
+            }
+            Console.WriteLine("|_____________________|");
+
+
+        }
+    }
+}
